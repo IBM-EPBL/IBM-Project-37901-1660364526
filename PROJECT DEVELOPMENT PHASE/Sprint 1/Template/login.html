@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="stylee.css">
+    </head>
+<body>
+    <div class="container">
+    <div class="card">
+    <div class="inner-box" id="card">
+    <div class="card-front">
+        <h2>LOGIN</h2>
+    <form>
+        <input type="email" class="input-box" placeholder="your Email Id " required>
+        <input type="password" class="input-box" placeholder="password" required>
+        <button type="submit" class="submit-btn">submit</button>
+        <input type="checkbox"><span>Remember Me</span>
+    </form>
+    <button type="button" class="btn" onclick="openSignup()">I'm New Here</button>
+    <a href="">Forget Password</a>
+        </div>
+        <div class="card-back">
+             <h2>SIGNUP</h2>
+    <form>
+        <input type="text" class="input-box" placeholder="Your Name" required> 
+        <input type="email" class="input-box" placeholder="your Email Id " required>
+        <input type="password" class="input-box" placeholder="password" required>
+        <button type="submit" class="submit-btn">submit</button>
+        <input type="checkbox"><span>Remember Me</span>
+    </form>
+    <button type="button" class="btn" onclick="openLogin()">I've an account</button>
+    <a href="">Forget Password</a>
+        
+        </div>
+        </div>
+    </div>
+    </div>
+    
+    <script>
+        var card = document.getElementById("card");
+        function openSignup(){
+            card.style.transform = "rotateY(-180deg)";
+        }
+            function openLogin(){
+            card.style.transform = "rotateY(0deg)";
+        }
+    </script>
+    </body>
+</html>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
