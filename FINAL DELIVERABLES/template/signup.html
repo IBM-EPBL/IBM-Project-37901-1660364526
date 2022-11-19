@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="shortcut icon" href="#">
+        <link ... href="{{ url_for('static', filename='static/signupstyle.css') }}" />
+        <link rel="stylesheet" href="static/signupstyle.css">
+    </head>
+<body>
+    <div class="container">
+    <div class="card">
+    <div class="inner-box" id="card">
+    <div class="card-front">
+        <h2>SIGNUP</h2>
+    <form action="/signup" method="post">
+        <input type="text" name="username" class="input-box" placeholder="Your Name" required>
+        <input type="email" name="email" class="input-box" placeholder="your Email Id " required>
+        <input type="password" name="password" class="input-box" placeholder="password" required>
+        <button type="submit" class="submit-btn" href="register">submit</button>
+    </form>
+        <button type="button" class="btn" onclick="openlogin()">I've an account</button>
+        </div>
+        </div>
+        </div>
+    </div>
+    </body>
+</html>
+    
+      
+        

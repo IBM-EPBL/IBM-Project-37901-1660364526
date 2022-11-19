@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename='static/cardstyle.css')}}">
+        <link rel="stylesheet" href="static/cardstyle.css">
+    </head>
+<body>
+     <div class="container">
+    <div class="card">
+    <section class="our-focus">
+            <div class="container">
+              <h2 class="text-center mt-3">Your details</h2>
+              <div class="border">
+							<table class="worddark"></br></br></br></br>
+								<tr>
+									<td>Measure:</td>
+									<td>{{ account[0] }}</td>
+								</tr>
+								<tr>
+									<td>Grams:</td>
+									<td>{{ account[1] }}</td>
+								</tr>
+								<tr>
+									<td>Calories:</td>
+									<td>{{ account[2] }}</td>
+								</tr>
+								<tr>
+									<td>Protien:</td>
+									<td>{{ account[3] }}</td>
+								</tr>
+								<tr>
+									<td>Fat:</td>
+									<td>{{ account[4] }}</td>
+								</tr>
+								<tr>
+									<td>Sat.Fat:</td>
+									<td>{{ account[5] }}</td>
+								</tr>
+								<tr>
+									<td>Fiber:</td>
+									<td>{{ account[6] }}</td>
+								</tr>
+								<tr>
+									<td>Carbs:</td>
+									<td>{{ account[7] }}</td>
+								</tr>
+								<tr>
+									<td>Category:</td>
+									<td>{{ account[8] }}</td>
+								</tr>
+								
+											
+							</table>
+              
+          </section>
+         </div></div></body></html>

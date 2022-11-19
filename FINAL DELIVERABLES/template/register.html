@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Details</title>
+<link rel="stylesheet" href="{{url_for('static', filename='static/registerstyle.css')}}">
+<link rel="stylesheet" href="static/registerstyle.css">
+</head>
+<body>
+<form action="/register" method="post">
+  <div class="container" style="color:black">
+<div class="card">
+    <h1><center>PROFILE</center></h1>
+<label for="Username"><b>Username:</b></label>
+    <input type="text" class="input-box" placeholder="Please enter your name" name="username" id="username" required>
+<br>
+    <label for="height"><b>Height:</b></label>
+    <input type="number"  class="input-box"  placeholder="Please enter your Height in cm" name="height" id="height" required>
+<br>
+
+    <label for="weight"><b>Weight:</b></label>
+    <input type="number"  class="input-box" placeholder="Please enter your Weight in kg" name="weight" id="weight" required>
+    <br>
+  <label for="Age"><b>Age:</b></label>
+    <input type="number"  class="input-box" placeholder="Please enter your Age" name="age" id="age" required>
+    <br>
+ <label for="illness"><b>Illness:</b></label>
+    <input type="text"  class="input-box" placeholder="Please enter your body illness" name="illness" id="illness" required>
+<br>
+   <label for="gender"><b>Gender:</b></label><br>
+<input type="radio" class="choice-box" id="male" name="gender" value="Male">
+<label for="male">Male</label><br>
+<input type="radio"  class="choice-box" id="female" name="gender" value="Female">
+<label for="female">Female</label><br>
+<input type="radio"  class="choice-box" id="others" name="gender" value="Others">
+<label for="others">Others</label>
+<br>
+
+<label for="allergy"><b>Allergies(in case):</b></label>
+    <input type="text"  class="input-box" placeholder="Please enter your  allergy " name="allergy" id="allergy" required>
+<br>
+    <center><button type="submit" class="submitbtn">Submit</button></center>
+  </div>
+  </div>
+  </form>
+</body>
+</html>
