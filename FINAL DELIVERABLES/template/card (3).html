@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename='static/card.css')}}" />
+        <link rel="stylesheet" href="static/card.css">
+    </head>
+<body>
+     <div class="container">
+    <div class="card">
+    <section class="our-focus">
+            
+        <h2 class="text-center mt-3"><font color=white>Your details</font></h2>
+              <div class="border">
+                 
+							<table class="worddark"><br><br><br><br>
+								<tr>
+                                    <td><font color=white>Food:</font></td>
+                                    <td><font color=white>{{ account['FOOD'] }}</font></td>
+								</tr>
+								<tr>
+                                    <td><font color=white>Measure:</font></td>
+                                    <td><font color=white>{{ account['MEASURE'] }}</font></td>
+								</tr>
+								<tr>
+                                    <td><font color=white>Grams:</font></td>
+                                    <td><font color=white>{{ account['GRAMS'] }}</font></td>
+								</tr>
+								<tr>
+                                    <td><font color=white>Calories:</font></td>
+                                    <td><font color=white>{{ account['CALORIES'] }}</font></td>
+								</tr>
+								<tr>
+                                    <td><font color=white>Protien:</font></td>
+                                    <td><font color=white>{{ account['PROTEIN'] }}</font></td>
+								</tr>
+								<tr>
+                                    <td><font color=white>Fat:</font></td>
+                                    <td><font color=white>{{ account['FAT'] }}</font></td>
+								</tr>
+								<tr>
+                                    <td><font color=white>Sat.Fat:</font></td>
+                                    <td><font color=white>{{ account['sat.fat'] }}</font></td>
+								</tr>
+								<tr>
+                                    <td><font color=white>Fiber:</font></td>
+                                    <td><font color=white>{{ account['FIBER'] }}</font></td>
+								</tr>
+								<tr>
+                                    <td><font color=white>Carbs:</font></td>
+                                    <td><font color=white>{{ account['CARBS'] }}</font></td>
+								</tr>
+								<tr>
+                                    <td><font color=white>Category:</font></td>
+                                    <td><font color=white>{{ account['CATEGORY'] }}</font></td>
+								</tr>
+								
+											
+							</table>
+          </section>
+         </div></div></body></html>
